@@ -49,6 +49,10 @@ button:hover{
     border-radius: rgb(52, 14, 95);;
 }
 
+h1{
+    color: white;
+    text-align: center;
+}
 .form-inline{
     display: flex;
 }
