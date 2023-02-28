@@ -48,3 +48,12 @@ button:hover{
     background-color: rgb(52, 14, 95);
     border-radius: rgb(52, 14, 95);;
 }
+
+.form-inline{
+    display: flex;
+}
+
+.form-inline input{
+    width: auto;
+    margin-right: 0.5rem;
+}
