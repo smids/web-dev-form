@@ -57,3 +57,7 @@ button:hover{
     width: auto;
     margin-right: 0.5rem;
 }
+
+input[type="checkbox" i]{
+    margin: 0 0.5rem;
+}
