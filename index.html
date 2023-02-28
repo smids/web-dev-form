@@ -21,24 +21,44 @@
     <main>
       <form action="/" method="GET">
         <section>
-          <label for="username">Your Name</label>
-          <input type="text" name="username" id="username" />
-          <label for="usermessage">Your Message</label>
-          <textarea name="usermessage" id="usermessage" rows="10"></textarea>
-          <label for="email">Your Email</label>
-          <input type="email" name="email" id="email" />
-          <label for="age">Your Age</label>
-          <input type="number" name="age" id="age" step="1" />
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
-          <label for="date">Your Birthday</label>
-          <input type="date" name="date" id="date" />
-          <label for="color">Favourite Color</label>
-          <select name="color" id="color">
-            <option value="blue">Blue</option>
-            <option value="black">Black</option>
-            <option value="red">Red</option>
-          </select>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="username" id="username" />
+            </li>
+            <li>
+              <label for="usermessage">Your Message</label>
+              <textarea
+                name="usermessage"
+                id="usermessage"
+                rows="10"
+              ></textarea>
+            </li>
+            <li>
+              <label for="email">Your Email</label>
+              <input type="email" name="email" id="email" />
+            </li>
+            <li>
+              <label for="age">Your Age</label>
+              <input type="number" name="age" id="age" step="1" />
+            </li>
+            <li>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </li>
+            <li>
+              <label for="date">Your Birthday</label>
+              <input type="date" name="date" id="date" />
+            </li>
+            <li>
+              <label for="color">Favourite Color</label>
+              <select name="color" id="color">
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+              </select>
+            </li>
+          </ul>
         </section>
         <section>
           <h2>Verifiy Account</h2>
@@ -60,7 +80,7 @@
             <label for="verify-email">Email</label>
           </div>
         </section>
-       <hr>
+        <hr />
         <section>
           <div class="form-inline">
             <input
@@ -72,7 +92,9 @@
             <p>Agree to terms ?</p>
           </div>
         </section>
-        <button>Submit</button>
+        <section>
+          <button type="submit">Submit</button>
+        </section>
       </form>
     </main>
   </body>
