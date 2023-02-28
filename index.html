@@ -24,7 +24,7 @@
           <ul>
             <li>
               <label for="username">Your Name</label>
-              <input type="text" name="username" id="username" />
+              <input type="text" name="username" id="username" required placeholder="your full name"/>
             </li>
             <li>
               <label for="usermessage">Your Message</label>
@@ -36,19 +36,19 @@
             </li>
             <li>
               <label for="email">Your Email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required/>
             </li>
             <li>
               <label for="age">Your Age</label>
-              <input type="number" name="age" id="age" step="1" />
+              <input type="number" name="age" id="age" step="1" required min="18" max="50"/>
             </li>
             <li>
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" required minlength="8"/>
             </li>
             <li>
               <label for="date">Your Birthday</label>
-              <input type="date" name="date" id="date" />
+              <input type="date" name="date" id="date" required min="2000-01-01"/>
             </li>
             <li>
               <label for="color">Favourite Color</label>
