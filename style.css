@@ -1,19 +1,27 @@
+:root{
+    --grey: rgb(251 248 255);
+    --blue: rgb(32, 5, 63);
+}
+
+
 body{
-    background-color: rgb(30, 30, 30);
+    background-color: var(--grey);
     font-family: 'Roboto', sans-serif;
 }
 
 form {
-    width: 30rem;
+    width: 40rem;
     margin: 3rem auto;
-    background-color: rgb(255,255,255);
+    background-color: var(--grey);
     padding: 1rem;
     border-radius: 6px;
+    box-shadow: 0px 4px 8px rgb(185 185 185);
 }
 
 label{
     margin-bottom: 0.5rem;
     display: block;
+    font-weight: bold;
 }
 
 textarea{
@@ -33,17 +41,17 @@ input, textarea, select{
 
 input:focus, textarea:focus, select:focus{
     background-color: rgb(219, 190, 253);
-    color: rgb(32, 5, 63);
-    border-radius: rgb(32,5,63);
+    color: var(--blue);
+    border-radius: var(--blue);
 }
 
 button{
     display: block;
     font-family: inherit;
-    background-color: rgb(32, 5, 63);
+    background-color: var(--blue);
     color: white;
-    border: 1px solid rgb(32,5,63);
-    padding: 0.5rem;
+    border: 1px solid var(--blue);
+    padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -60,8 +68,8 @@ ul{
 }
 
 h1{
-    color: white;
     text-align: center;
+    margin: 2rem;
 }
 
 .form-inline{
@@ -71,6 +79,17 @@ h1{
 .form-inline input{
     width: auto;
     margin-right: 0.5rem;
+}
+
+.button{
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+}
+
+button[type="reset" i]{
+    background-color: var(--grey);
+    color: var(--blue);
 }
 
 input[type="checkbox" i]{

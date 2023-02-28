@@ -1,101 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>HTML Form</title>
-  </head>
 
-  <body>
-    <header>
-      <h1>Demo Form</h1>
-    </header>
-    <main>
-      <form action="/" method="GET">
-        <section>
-          <ul>
-            <li>
-              <label for="username">Your Name</label>
-              <input type="text" name="username" id="username" required placeholder="your full name"/>
-            </li>
-            <li>
-              <label for="usermessage">Your Message</label>
-              <textarea
-                name="usermessage"
-                id="usermessage"
-                rows="10"
-              ></textarea>
-            </li>
-            <li>
-              <label for="email">Your Email</label>
-              <input type="email" name="email" id="email" required/>
-            </li>
-            <li>
-              <label for="age">Your Age</label>
-              <input type="number" name="age" id="age" step="1" required min="18" max="50"/>
-            </li>
-            <li>
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" required minlength="8"/>
-            </li>
-            <li>
-              <label for="date">Your Birthday</label>
-              <input type="date" name="date" id="date" required min="2000-01-01"/>
-            </li>
-            <li>
-              <label for="color">Favourite Color</label>
-              <select name="color" id="color">
-                <option value="blue">Blue</option>
-                <option value="black">Black</option>
-                <option value="red">Red</option>
-              </select>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>Verifiy Account</h2>
-          <div class="form-inline">
-            <input
-              type="radio"
-              name="verify"
-              id="verify-text-message"
-              value="text-message"
-            />
-            <label for="verify-text-message">Text Message</label>
-          </div>
-          <div class="form-inline">
-            <input type="radio" name="verify" id="verify-phone" value="phone" />
-            <label for="verify-phone">Phone</label>
-          </div>
-          <div class="form-inline">
-            <input type="radio" name="verify" id="verify-email" value="email" />
-            <label for="verify-email">Email</label>
-          </div>
-        </section>
-        <hr />
-        <section>
-          <div class="form-inline">
-            <input
-              type="checkbox"
-              name="agree-terms"
-              id="agree-terms"
-              value="agree"
-            />
-            <p>Agree to terms ?</p>
-          </div>
-        </section>
-        <section>
-          <button type="submit">Submit</button>
-        </section>
-      </form>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>HTML Form</title>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  <main>
+    <form action="/" method="GET">
+      <section>
+        <h2>How can we help you ?</h2>
+        <ul>
+          <li>
+            <label for="username">Your Name</label>
+            <input type="text" name="username" id="username" required />
+          </li>
+          <li>
+            <label for="email">Your Email Address</label>
+            <input type="email" name="email" id="email" required />
+          </li>
+          <li>
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" name="phone" id="phone" minlength="5" required />
+          </li>
+          <li>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" rows="10" required></textarea>
+          </li>
+          <li>
+            <label for="find">How did you find us? </label>
+            <select name="find" id="find">
+              <option value="web-search">Web Search</option>
+              <option value="social-media">Social Media</option>
+              <option value="ads">Ads</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>How should we reply?</h2>
+        <div class="form-inline">
+          <input type="radio" name="reply" id="reply-call" value="reply-call" />
+          <label for="call">Call Me</label>
+        </div>
+        <div class="form-inline">
+          <input type="radio" name="reply" id="reply-email" value="email" />
+          <label for="reply-email">Send me an email</label>
+        </div>
+        <div class="form-inline">
+          <input type="radio" name="reply" id="reply-no" value="reply-no" />
+          <label for="reply-no">Don't reply</label>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <div class="form-inline">
+          <input type="checkbox" name="acc-terms" id="acc-terms" value="agree" required/>
+          <p>Accept terms ?</p>
+        </div>
+      </section>
+      <section class="button">
+        <button type="reset" id="btn-clear">Clear</button>
+        <button type="submit">Submit</button>
+      </section>
+    </form>
+  </main>
+</body>
+
 </html>
